@@ -36,13 +36,13 @@ namespace Todo.Domain.Api
                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>
                {
-                   options.Authority = "https://securetoken.google.com/project-1064011784157549102";
+                   options.Authority = "https://securetoken.google.com/todos-44b6b";
                    options.TokenValidationParameters = new TokenValidationParameters
                    {
                        ValidateIssuer = true,
-                       ValidIssuer = "https://securetoken.google.com/project-1064011784157549102",
+                       ValidIssuer = "https://securetoken.google.com/todos-44b6b",
                        ValidateAudience = true,
-                       ValidAudience = "project-1064011784157549102",
+                       ValidAudience = "todos-44b6b",
                        ValidateLifetime = true
                    };
                });
